@@ -16,17 +16,6 @@ app.config['MAIL_DEFAULT_SENDER'] = 'test@dtechnologys.com'
 # Initialize Flask-Mail
 mail = Mail(app)
 
-DB_CONFIG = {
-    'host': 'localhost',        # Replace with your database host
-    'user': 'myuser',     # Replace with your MySQL username
-    'password': 'mypassword', # Replace with your MySQL password
-    'database': 'mydatabase', # Replace with your database name
-}
-
-
-
-
-
 @app.route('/')
 def index():
     return render_template('index.html')
